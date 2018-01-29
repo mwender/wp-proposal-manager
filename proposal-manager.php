@@ -11,6 +11,10 @@
  *
  * @package         Hollingsworth_Proposal_Manager
  */
+define( 'HPM_PLUGIN_DIR_URL', plugin_dir_url( __FILE__ ) );
+define( 'HPM_PLUGIN_DIR_PATH', plugin_dir_path( __FILE__ ) );
+
+require ( 'lib/typerocket/init.php' );
 
 // Initialize Plugin Updates
 require_once ( plugin_dir_path( __FILE__ ) . 'lib/classes/plugin-updater.php' );
