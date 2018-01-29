@@ -14,6 +14,7 @@
 define( 'HPM_PLUGIN_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'HPM_PLUGIN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
+// Initialize TypeRocket
 require ( 'lib/typerocket/init.php' );
 
 // Initialize Plugin Updates
@@ -28,3 +29,6 @@ if( is_admin() ){
         new GitHub_Plugin_Updater( __FILE__, 'mwender', 'hollingsworth-proposal-manager', GITHUB_ACCESS_TOKEN );
     } );
 }
+
+// Load Required Files
+require_once( 'lib/fns/proposal.cpt.php' );
