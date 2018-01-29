@@ -4,10 +4,23 @@
  * Plugin URI:      PLUGIN SITE HERE
  * Description:     Adds a Proposal CPT for quick and easy creation of Hollingsworth Construction proposals.
  * Author:          Michael Wender
- * Author URI:      https://mwender.com
- * Text Domain:     proposal-manager
+ * Author URI:      https://michaelwender.com
+ * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
  * Version:         0.1.0
  *
- * @package         Proposal_Manager
+ * @package         Hollingsworth_Proposal_Manager
  */
+
+// Initialize Plugin Updates
+require_once ( plugin_dir_path( __FILE__ ) . 'lib/classes/plugin-updater.php' );
+if( is_admin() ){
+    add_action( 'init', function(){
+        // If you're experiencing GitHub API rate limits while testing
+        // plugin updates, create a `Personal access token` under your
+        // GitHub profile's `Developer Settings`. Then add
+        // `define( 'GITHUB_ACCESS_TOKEN', your_access_token );` to
+        // your site's `wp-config.php`.
+        new GitHub_Plugin_Updater( __FILE__, 'mwender', 'hollingsworth-proposal-manager', GITHUB_ACCESS_TOKEN );
+    } );
+}
