@@ -1,0 +1,47 @@
+/* Cards */
+.card{
+  border: 1px solid @orange;
+  position: relative;
+
+  @media screen and (max-width: @breakpoint ){
+    margin-bottom: 20px;
+  }
+
+  .card-image{
+    border-bottom: 1px solid @orange;
+
+    a{
+      display: block;
+      line-height: 0;
+
+      &:hover{
+      }
+    }
+
+    img{
+      display: block;
+    }
+  }
+  .card-caption{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    border-bottom: 1px solid @orange;
+    width: 100%;
+    line-height: 1.8rem;
+    text-align: center;
+    background: rgba(0,0,0,60%);
+    font-weight: bold;
+    font-size: 13px;
+
+    a{
+      display: block;
+      color: #fff;
+      padding: 6px;
+
+      &:hover{
+        background-color: @orange;
+      }
+    }
+  }
+}

@@ -14,10 +14,10 @@
       <section class="container">
         <div class="row">
           <div class="column">
-            <img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/hollingsworth-logo.svg" width="200" />
+            <a href="<?php echo site_url(); ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/hollingsworth-logo.svg" alt="Visit our website" /></a>
           </div>
           <div class="column">
-            <p>Prepared: <?php echo get_the_date() ?></p>
+            <p>Prepared: <?php echo get_the_date() ?><br /><a href="<?php echo site_url() ?>"><?php echo str_replace( ['http://','https://'], '', site_url() ) ?></a></p>
           </div>
         </div>
 
@@ -30,28 +30,14 @@
             <h1 class="title"><?= get_the_title() ?></h1>
           </div>
           <div class="column">
-            <a class="button" style="<?php if( 'yes' != $video_viewed ) echo 'display: none; ' ?>" href="#" id="watch-video">Replay Video</a>
+            <a class="button" style="<?php if( 'yes' != $video_viewed ) echo 'display: none; ' ?>" href="#" id="replay-video">Replay Video</a>
           </div>
         </div>
       </section>
     </nav>
-    <?php
-    if( 'yes' != $video_viewed ){
-    ?>
-    <section class="container" id="video">
-      <?php
-      $video_id = get_post_meta( $post->ID, 'video', true );
-      if( $video_id ){
-        $video_url = wp_get_attachment_url( $video_id );
-        echo '<h3>Introductory Video</h3>';
-        //echo wp_video_shortcode( [ 'src' => $video_url, 'poster' => HPM_PLUGIN_DIR_URL . 'lib/img/proposal_video_thumbnail.jpg' ] );
-        echo '<video class="plyr-video" id="video-1626-1" poster="' . HPM_PLUGIN_DIR_URL . 'lib/img/proposal_video_thumbnail.jpg" controls="controls" preload="metadata"><source type="video/mp4" src="' . $video_url . '"></video>'; //
-      } else {
-        echo '<p><strong>No video found!</strong><br />Please check the settings for this proposal. No video was found.</p>';
-      }
-      ?>
+    <section class="container" id="video"<?php if( 'yes' == $video_viewed ) echo ' style="display: none;"' ?>>
+      <video id="plyr-video" poster="' . HPM_PLUGIN_DIR_URL . 'lib/img/proposal_video_thumbnail.jpg" controls="controls" preload="metadata"></video>
     </section>
-    <?php } ?>
     <section class="container" id="attachments" style="<?php if( 'yes' != $video_viewed ) echo 'display: none;' ?>">
       <div class="row">
         <div class="column column-60">
@@ -84,6 +70,46 @@
           if( ! empty( $post_content ) )
             echo '<h4>Notes</h4>' . $post_content;
           ?>
+        </div>
+      </div>
+    </section>
+    <section class="container grey" id="about">
+      <h4>About The Hollingsworth Companies</h4>
+      <div class="row">
+        <div class="column column-25">
+          <a href="<?php echo site_url('our-listings') ?>" target="_blank"><img class="border" src="<?php echo HPM_PLUGIN_DIR_URL; ?>lib/img/map-cropped.jpg" /></a>
+        </div>
+        <div class="column column-75">
+          <p><strong>Building on Success</strong><br/>The Hollingsworth Companies Industrial Building Program doesn’t just build industrial facilities. We build businesses. Because we are likely to own all the real estate surrounding any of our facilities that you might select, we take a very serious interest in making sure your business is successful and growing. Our business grows when your business thrives, so it is only natural for us to want to see you do well. The list of creative solutions to business challenges is as long as our 50 years of combined experience, and it will continue to get longer.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="card-image"><a href="<?php site_url('our-listings?view=5') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php site_url('our-listings?view=5') ?>">Click to Find Properties</a></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image"><a href="<?php site_url('our-listings?view=1') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php site_url('our-listings?view=1') ?>">Available Now</a></div>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image"><a href="<?php site_url('our-listings?view=2') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php site_url('our-listings?view=2') ?>">Under Construction Ready in 120 Days</a></div>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image"><a href="<?php site_url('our-listings?view=3') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php site_url('our-listings?view=3') ?>">Build to Suit in as little as 180 days</a></div>
+          </div>
+
         </div>
       </div>
     </section>

@@ -1,0 +1,22 @@
+/* grid adjustments */
+.row{
+  .column{
+    &.column-25,
+    &.column-40,
+    &.column-60,
+    &.column-75 {
+      @media (max-width: @breakpoint ) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.container{
+  &.grey{
+    background-color: lighten(#eee,4%);
+    border-top: 1px solid lighten(#000,90%);
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+  }
+}
