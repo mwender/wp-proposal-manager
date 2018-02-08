@@ -3,6 +3,16 @@
 body {
   border-top: 10px solid #104D2F;
 }
+@media only screen and (max-width: 1024px) {
+  body {
+    border-top-width: 5px;
+  }
+}
+@media (max-width: 1024px) {
+  section.container .row {
+    flex-direction: column;
+  }
+}
 header .row .column,
 nav .row .column {
   display: flex;
@@ -16,7 +26,7 @@ header .row .column:last-child,
 nav .row .column:last-child {
   justify-content: flex-end;
 }
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   header .row .column:last-child,
   nav .row .column:last-child {
     justify-content: center;
@@ -33,13 +43,16 @@ header .row .column:first-child img {
   width: 200px;
   height: auto;
 }
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  header {
+    border-top-width: 5px;
+  }
   header .row .column:first-child a {
     display: block;
     margin: 0 auto;
   }
   header .row .column:first-child img {
-    width: 260px;
+    width: 160px;
   }
   header .row .column:last-child p {
     font-size: 13px;
@@ -54,8 +67,19 @@ nav {
   margin-bottom: 30px;
   min-height: 59px;
 }
+@media only screen and (max-width: 1024px) {
+  nav {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
 nav .button {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+  nav .button {
+    margin-top: 12px;
+  }
 }
 nav .title {
   display: inline;
@@ -65,6 +89,12 @@ nav .title {
   text-decoration: none;
   margin-bottom: 0;
   font-weight: bold;
+}
+@media only screen and (max-width: 1024px) {
+  nav .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 nav .column:last-child {
   justify-content: flex-end;
@@ -86,9 +116,6 @@ nav .column:last-child {
     display: block;
     text-align: center;
     width: 100%;
-  }
-  .navigation .row .column:first-child {
-    margin-bottom: 8px;
   }
 }
 section#attachments li {
@@ -126,6 +153,27 @@ ul.lrg li {
 }
 .footer p {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .footer {
+    position: relative;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* grid adjustments */
 @media (max-width: 1024px) {

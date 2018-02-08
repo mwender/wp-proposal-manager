@@ -1,6 +1,16 @@
 /* Layout */
 body{
   border-top: 10px solid @green;
+
+  @media only screen
+  and (max-width: @breakpoint){
+    border-top-width: 5px;
+  }
+}
+section.container .row{
+  @media (max-width: @breakpoint){
+    flex-direction: column;
+  }
 }
 header,
 nav{
@@ -15,7 +25,8 @@ nav{
     &:last-child{
       justify-content: flex-end;
 
-      @media screen and (max-width: @breakpoint) {
+      @media only screen
+      and (max-width: @breakpoint) {
         justify-content: center;
       }
     }
@@ -35,14 +46,17 @@ header{
     }
   }
 
-  @media screen and (max-width: @breakpoint){
+  @media only screen
+  and (max-width: @breakpoint){
+    border-top-width: 5px;
+
     .row .column:first-child{
       a{
         display: block;
         margin: 0 auto;
       }
       img{
-        width: 260px;
+        width: 160px;
       }
     }
     .row .column:last-child p{
@@ -60,8 +74,19 @@ nav{
   margin-bottom: 30px;
   min-height: 59px;
 
+  @media only screen
+  and (max-width: @breakpoint){
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
   .button{
     margin-bottom: 0;
+
+    @media only screen
+    and (max-width: @breakpoint){
+      margin-top: 12px;
+    }
   }
 
   .title{
@@ -72,6 +97,12 @@ nav{
     text-decoration: none;
     margin-bottom: 0;
     font-weight: bold;
+
+    @media only screen
+    and (max-width: @breakpoint){
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
   .column{
     &:last-child{
@@ -102,7 +133,6 @@ nav{
         width: 100%;
       }
       .row .column:first-child{
-        margin-bottom: 8px;
       }
   }
 }
@@ -144,5 +174,10 @@ ul.lrg li{
 
     p{
       margin-bottom: 0;
+    }
+
+    @media only screen
+    and (max-width: @breakpoint){
+      position: relative;
     }
 }

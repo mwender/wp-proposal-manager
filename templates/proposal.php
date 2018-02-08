@@ -1,12 +1,12 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
-  <meta name="robots" content="noindex,nofollow">
-  <meta charset="<?php bloginfo('charset') ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php wp_title() ?></title>
-  <?php wp_head(); ?>
-</head>
+  <head>
+    <meta charset="<?php bloginfo('charset') ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+    <title><?php wp_title() ?></title>
+    <?php wp_head(); ?>
+  </head>
 <body>
 <?php $video_viewed = tr_cookie()->get('video_viewed'); ?>
   <main class="wrapper">
@@ -36,7 +36,9 @@
       </section>
     </nav>
     <section class="container" id="video"<?php if( 'yes' == $video_viewed ) echo ' style="display: none;"' ?>>
-      <video id="plyr-video" poster="' . HPM_PLUGIN_DIR_URL . 'lib/img/proposal_video_thumbnail.jpg" controls="controls" preload="metadata"></video>
+      <div class="video-container">
+        <div id="player"></div>
+      </div>
     </section>
     <section class="container" id="attachments" style="<?php if( 'yes' != $video_viewed ) echo 'display: none;' ?>">
       <div class="row">
