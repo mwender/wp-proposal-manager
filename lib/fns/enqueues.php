@@ -27,6 +27,6 @@ function enqueue_scripts(){
     wp_register_script( 'plyr', HPM_PLUGIN_DIR_URL . 'lib/js/plyr/plyr.js' );
     wp_enqueue_style( 'plyr', HPM_PLUGIN_DIR_URL . 'lib/js/plyr/plyr.css' );
     wp_enqueue_script( 'proposal', HPM_PLUGIN_DIR_URL . 'lib/js/proposal.js', ['plyr'], filemtime( HPM_PLUGIN_DIR_PATH . 'lib/js/proposal.js'), true );
-    wp_enqueue_style( 'proposal-manager', HPM_PLUGIN_DIR_URL . 'lib/css/main.css' );
+    wp_enqueue_style( 'proposal-manager', HPM_PLUGIN_DIR_URL . 'lib/css/main.css', null, filemtime( HPM_PLUGIN_DIR_PATH . 'lib/css/main.css') );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_scripts', 999 );
