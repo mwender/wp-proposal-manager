@@ -88,28 +88,28 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php site_url('our-listings?view=5') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php site_url('our-listings?view=5') ?>">Click to Find Properties</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=5') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=5') ?>" target="_blank">Click to Find Properties</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php site_url('our-listings?view=1') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php site_url('our-listings?view=1') ?>">Available Now</a></div>
-          </div>
-
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-image"><a href="<?php site_url('our-listings?view=2') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php site_url('our-listings?view=2') ?>">Under Construction Ready in 120 Days</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=1') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=1') ?>" target="_blank">Available Now</a></div>
           </div>
 
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php site_url('our-listings?view=3') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php site_url('our-listings?view=3') ?>">Build to Suit in as little as 180 days</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=2') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=2') ?>" target="_blank">Under Construction Ready in 120 Days</a></div>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=3') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=3') ?>" target="_blank">Build to Suit in as little as 180 days</a></div>
           </div>
 
         </div>
