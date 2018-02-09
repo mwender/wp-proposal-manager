@@ -1,11 +1,8 @@
 /* Layout */
-body{
-  border-top: 10px solid @green;
+@topborderwidth: 5px;
 
-  @media only screen
-  and (max-width: @breakpoint){
-    border-top-width: 5px;
-  }
+body{
+  border-top: @topborderwidth solid @green;
 }
 section.container .row{
   @media (max-width: @breakpoint){
@@ -34,7 +31,7 @@ nav{
 }
 header{
   background-color: darken(#eee,2%);
-  border-top: 10px solid @orange;
+  border-top: @topborderwidth solid @orange;
   border-bottom: 1px solid darken(#eee,10%);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -48,7 +45,6 @@ header{
 
   @media only screen
   and (max-width: @breakpoint){
-    border-top-width: 5px;
 
     .row .column:first-child{
       a{
@@ -132,8 +128,6 @@ nav{
         text-align: center;
         width: 100%;
       }
-      .row .column:first-child{
-      }
   }
 }
 
@@ -143,10 +137,14 @@ section#attachments{
     margin-left: 2rem;
   }
 }
-
-section#about{
+div#about{
+  p{
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+}
+div#view-properties{
   margin-top: 1.5rem;
-  padding-top: 1.5rem;
 }
 
 a{
@@ -164,7 +162,6 @@ ul.lrg li{
 .footer{
     text-align: center;
     font-size: 1.4rem;
-    position: fixed;
     z-index: 100;
     background-color: lighten(#eee,4%);
     border-top: 1px solid #eee;
@@ -174,10 +171,5 @@ ul.lrg li{
 
     p{
       margin-bottom: 0;
-    }
-
-    @media only screen
-    and (max-width: @breakpoint){
-      position: relative;
     }
 }
