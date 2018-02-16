@@ -33,6 +33,6 @@ if( is_admin() ){
 // Load Required Files
 require_once( 'lib/fns/enqueues.php' );
 require_once( 'lib/fns/inlinestyles.php' );
-require_once( 'lib/fns/proposal.cpt.php' );
+require_once( 'lib/fns/proposal-cpt.php' );
 require_once( 'lib/fns/unique_id.php' );
 require_once( 'lib/fns/url_rewrites.php' );
