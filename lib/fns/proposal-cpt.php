@@ -18,6 +18,7 @@ add_action( 'typerocket_loaded', function(){
     echo $form->hidden( 'unique_id',[ 'value' => $unique_id ] );
 
     $proposal_permalink = site_url( 'view-proposal/' . $unique_id );
+    echo '<style type="text/css">div#message > p > a{display: none;}</style>';
     echo '<h4 style="margin-bottom: 4px;">Unique Proposal URL [<a target="_blank" href="' . site_url( 'view-proposal/' . $unique_id ) . '">View</a>]</h4>';
     echo '<input type="text" value="' . $proposal_permalink  . '" name="disabled_unique_id" id="disabled_unique_id" />';
     echo '<div style="font-size: 12px; height: 16px; margin-top: 4px; color: #090;" id="copy-notify"><span style="display: none; margin-left: 8px;">Link copied to your clipboard.</span></div>';
