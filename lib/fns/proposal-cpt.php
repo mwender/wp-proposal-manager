@@ -56,10 +56,18 @@ add_action( 'typerocket_loaded', function(){
   });
 
   // Let user pick a video to include with the proposal
-  tr_meta_box('Video')->apply($proposals);
-  function add_meta_content_video() {
+  tr_meta_box('Introductory Video')->apply($proposals);
+  function add_meta_content_introductory_video() {
+    $videos = [
+      'Video_All' => 'E3_0_objXK4',
+      'Video_No DAI Incentive (<span style="color: #f00;"><strong>Tom Mann:</strong> This video needs to be uploaded to YouTube.</span>)' => '',
+      'Video_No A&amp;S (<span style="color: #f00;"><strong>Tom Mann:</strong> This needs to be uploaded to YouTube.</span>)' => '',
+      'Video_No DAI_No A&S (<span style="color: #f00;"><strong>Tom Mann:</strong> This needs to be uploaded to YouTube.</span>)' => '',
+    ];
     $form = tr_form();
+    echo $form->radio('Video')->setOptions( $videos );
 
+    /*
     $video_query_args = [
       'post_type' => 'attachment',
       'post_mime_type' => 'video/mp4',
@@ -76,6 +84,7 @@ add_action( 'typerocket_loaded', function(){
     else:
       echo '<p><strong>No videos found!</strong><br />Please upload one or more videos to your WordPress media library.</p>';
     endif;
+    /**/
   }
 
 });
