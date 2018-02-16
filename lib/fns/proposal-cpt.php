@@ -1,4 +1,11 @@
 <?php
+function hide_toolbar_for_proposals(){
+    if( 'proposal' == get_post_type() ){
+        return false;
+    }
+    return true;
+}
+add_filter('show_admin_bar', 'hide_toolbar_for_proposals', 99);
 
 add_action( 'typerocket_loaded', function(){
   $proposals = tr_post_type( 'Proposal', 'Proposals' );
