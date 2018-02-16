@@ -3,6 +3,10 @@
 namespace ProposalManager\fns\inlinestyles;
 
 function inline_styles(){
+  // Don't do anything if we're not on a proposal page
+  if( 'proposal' != get_post_type() )
+    return;
+
   ?>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <style type="text/css">
