@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     Hollingsworth Proposal Manager
- * Plugin URI:      PLUGIN SITE HERE
+ * Plugin URI:      https://github.com/mwender/wp-proposal-manager
  * Description:     Adds a Proposal CPT for quick and easy creation of Hollingsworth Construction proposals.
  * Author:          Michael Wender
  * Author URI:      https://michaelwender.com
