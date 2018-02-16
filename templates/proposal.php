@@ -47,25 +47,16 @@
           <div id="attachments" <?php if( 'yes' != $video_viewed ) echo 'style="display: none;"' ?>>
             <h3>Your proposal package:</h3>
             <?php
-            $pdf_query_args = [
-              'post_type' => 'attachment',
-              'post_mime_type' => 'application/pdf',
-              'post_status' => 'inherit',
-              'posts_per_page' => -1,
-              'post_parent' => $post->ID
-            ];
-            $pdf_query = new WP_Query( $pdf_query_args );
-            if( $pdf_query->have_posts() ):
+            $files = tr_posts_field('files');
+            if( $files ){
               echo '<ul class="lrg">';
-              while( $pdf_query->have_posts() ){
-                $pdf_query->the_post();
-                echo '<li><a href="' . wp_get_attachment_url( get_the_ID() ) . '" target="_blank">' . get_the_title() . '</a></li>';
+              foreach( $files as $file ){
+                echo '<li><a href="' . wp_get_attachment_url( $file['pdf'] ) . '" target="_blank">' . get_the_title( $file['pdf'] ) . '</a></li>';
               }
               echo '</ul>';
-              wp_reset_postdata();
-            else:
-              echo '<p>No files have been included.</p>';
-            endif;
+            } else {
+              echo '<div class="alert"><p><strong>No Attachments!</strong>No attachments have been added to this Proposal. Please <a href="' . edit_post_link( $post->ID ) . '">edit this Proposal</a> and add some attachments under the <code>Attachments</code> meta box.</p></div>';
+            }
 
             $post_content = apply_filters( 'the_content', get_the_content() );
             if( ! empty( $post_content ) )
