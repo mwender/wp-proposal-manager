@@ -58,7 +58,7 @@
               echo '<div class="alert"><p><strong>No Attachments!</strong>No attachments have been added to this Proposal. Please <a href="' . edit_post_link( $post->ID ) . '">edit this Proposal</a> and add some attachments under the <code>Attachments</code> meta box.</p></div>';
             }
 
-            $post_content = apply_filters( 'the_content', get_the_content() );
+            $post_content = apply_filters( 'the_content', $post->post_content );
             if( ! empty( $post_content ) )
               echo '<hr/><h4>Notes</h4>' . $post_content;
             ?>
