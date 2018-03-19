@@ -67,10 +67,10 @@ add_action( 'typerocket_loaded', function(){
   tr_meta_box('Introductory Video')->apply($proposals);
   function add_meta_content_introductory_video() {
     $videos = [
-      'Video_All' => 'E3_0_objXK4',
-      'Video_No DAI Incentive (<span style="color: #f00;"><strong>Tom Mann:</strong> This video needs to be uploaded to YouTube.</span>)' => '',
-      'Video_No A&amp;S (<span style="color: #f00;"><strong>Tom Mann:</strong> This needs to be uploaded to YouTube.</span>)' => '',
-      'Video_No DAI_No A&S (<span style="color: #f00;"><strong>Tom Mann:</strong> This needs to be uploaded to YouTube.</span>)' => '',
+      'Build to Suit with Incentive' => 'E3_0_objXK4',
+      'No Build to Suit with Incentive' => 'I0_MSfE_JOI',
+      'Build to Suit w/o Incentive' => '7xfhO-Y2_70',
+      'No Build to Suite w/o Incentive' => 'ktFsRkzJFk8',
     ];
     $form = tr_form();
     echo $form->radio('Video')->setOptions( $videos );
