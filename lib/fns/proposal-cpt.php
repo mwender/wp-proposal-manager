@@ -67,10 +67,10 @@ add_action( 'typerocket_loaded', function(){
   tr_meta_box('Introductory Video')->apply($proposals);
   function add_meta_content_introductory_video() {
     $videos = [
-      'Build to Suit with Incentive' => 'E3_0_objXK4',
+      'Build to Suit with Incentive' => 'cdgTI9wHN3s',
       'No Build to Suit with Incentive' => 'I0_MSfE_JOI',
       'Build to Suit w/o Incentive' => '7xfhO-Y2_70',
-      'No Build to Suite w/o Incentive' => 'ktFsRkzJFk8',
+      'No Build to Suit w/o Incentive' => 'ktFsRkzJFk8',
     ];
     $form = tr_form();
     echo $form->radio('Video')->setOptions( $videos );
