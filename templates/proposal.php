@@ -66,7 +66,7 @@
         </div>
         <div class="column column-33" id="about">
           <h4>About The Hollingsworth Companies</h4>
-          <a href="<?php echo site_url('our-listings') ?>" target="_blank"><img class="border" src="<?php echo HPM_PLUGIN_DIR_URL; ?>lib/img/map-cropped.jpg" /></a>
+          <a href="<?php echo site_url('our-listings', 'http') ?>" target="_blank"><img class="border" src="<?php echo HPM_PLUGIN_DIR_URL; ?>lib/img/map-cropped.jpg" /></a>
           <p class="hidetext"><strong>Building on Success: </strong><br/>The Hollingsworth Companies Industrial Building Program doesn’t just build industrial facilities. We build businesses. Because we are likely to own all the real estate surrounding any of our facilities that you might select, we take a very serious interest in making sure your business is successful and growing. Our business grows when your business thrives, so it is only natural for us to want to see you do well. The list of creative solutions to business challenges is as long as our 50 years of combined experience, and it will continue to get longer.</p>
         </div>
       </div>
@@ -76,26 +76,26 @@
       <div class="row" style="margin-bottom: 10px;">
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings?view=5') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=5') ?>" target="_blank">Click to Find Properties</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=5', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=5', 'http') ?>" target="_blank">Click to Find Properties</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings?view=1') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=1') ?>" target="_blank">Available Now</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=1', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=1', 'http') ?>" target="_blank">Available Now</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings?view=2') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=2') ?>" target="_blank">Under Construction Ready in 120 Days</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=2', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=2', 'http') ?>" target="_blank">Under Construction Ready in 120 Days</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings?view=3') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=3') ?>" target="_blank">Build to Suit in as little as 180 days</a></div>
+            <div class="card-image"><a href="<?php echo site_url('our-listings?view=3', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
+            <div class="card-caption"><a href="<?php echo site_url('our-listings?view=3', 'http') ?>" target="_blank">Build to Suit in as little as 180 days</a></div>
           </div>
         </div>
       </div>
