@@ -18,6 +18,7 @@ define( 'HPM_PLUGIN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 require ( 'lib/typerocket/init.php' );
 
 // Initialize Plugin Updates
+/*
 require_once ( plugin_dir_path( __FILE__ ) . 'lib/classes/plugin-updater.php' );
 if( is_admin() ){
     add_action( 'init', function(){
@@ -29,6 +30,7 @@ if( is_admin() ){
         new GitHub_Plugin_Updater( __FILE__, 'mwender', 'hollingsworth-proposal-manager', GITHUB_ACCESS_TOKEN );
     } );
 }
+/**/
 
 // Hide Admin Bar for `proposal` CPT
 function hide_adminbar_on_proposals(){
