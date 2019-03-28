@@ -30,6 +30,15 @@ if( is_admin() ){
     } );
 }
 
+// Hide Admin Bar for `proposal` CPT
+add_filter('show_admin_bar', 'hide_adminbar_on_proposals');
+function hide_adminbar_on_proposals(){
+    if( is_singular( 'proposal' ) ){
+        return false;
+    }
+    return true;
+}
+
 // Load Required Files
 require_once( 'lib/fns/enqueues.php' );
 require_once( 'lib/fns/inlinestyles.php' );
