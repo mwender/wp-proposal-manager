@@ -7,7 +7,7 @@
  * Author URI:      https://michaelwender.com
  * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  *
  * @package         Hollingsworth_Proposal_Manager
  */
@@ -31,13 +31,13 @@ if( is_admin() ){
 }
 
 // Hide Admin Bar for `proposal` CPT
-add_filter('show_admin_bar', 'hide_adminbar_on_proposals');
 function hide_adminbar_on_proposals(){
-    if( is_singular( 'proposal' ) ){
+    if( is_singular( 'proposal' ) || 'proposal' == get_post_type() ){
         return false;
     }
     return true;
 }
+add_filter('show_admin_bar', 'hide_adminbar_on_proposals', 999);
 
 // Load Required Files
 require_once( 'lib/fns/enqueues.php' );
