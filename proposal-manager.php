@@ -31,10 +31,13 @@ if( is_admin() ){
     } );
 }
 /**/
-
-// Hide Admin Bar for `proposal` CPT
 function hide_adminbar_on_proposals(){
-    if( is_singular( 'proposal' ) || 'proposal' == get_post_type() ){
+    if(
+      is_singular( 'proposal' )
+      || 'proposal' == get_post_type()
+      || is_singular( 'Proposal' )
+      || 'Proposal' == get_post_type()
+    ){
         return false;
     }
     return true;
