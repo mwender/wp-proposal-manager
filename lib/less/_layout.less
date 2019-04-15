@@ -1,8 +1,16 @@
 /* Layout */
 @topborderwidth: 5px;
 
+html #wpadminbar{
+  display: none;
+}
+
 body{
   border-top: @topborderwidth solid @green;
+  background-color: @green;
+}
+main.wrapper{
+  background-color: #fff;
 }
 section.container .row{
   @media (max-width: @breakpoint){
