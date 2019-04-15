@@ -40,9 +40,17 @@
         <div class="column column-67">
           <div id="video"<?php if( 'yes' == $video_viewed ) echo ' style="display: none;"' ?>>
             <h3 style="margin-bottom: 1.4rem;">Introductory Video</h3>
+            <?php
+            global $post;
+            $video = get_post_meta( $post->ID, 'video', true );
+            $video_url = wp_get_attachment_url( $video );
+            ?>
             <div class="video-container">
-              <div id="player"></div>
+              <video class="video-js" id="proposal-video">
+
+              </video>
             </div>
+            <a class="button button-block button-lg" id="play-proposal-video" style="margin-top: 1rem; margin-bottom: 3rem;" href="#">Click to Play Video</a>
           </div>
           <div id="attachments" <?php if( 'yes' != $video_viewed ) echo 'style="display: none;"' ?>>
             <h3>Your proposal package:</h3>

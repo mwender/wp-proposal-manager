@@ -59,16 +59,18 @@ add_action( 'typerocket_loaded', function(){
   // Let user pick a video to include with the proposal
   tr_meta_box('Introductory Video')->apply($proposals);
   function add_meta_content_introductory_video() {
+    $form = tr_form();
+    /*
     $videos = [
       'Build to Suit with Incentive' => 'cdgTI9wHN3s',
       'No Build to Suit with Incentive' => 'I0_MSfE_JOI',
       'Build to Suit w/o Incentive' => '7xfhO-Y2_70',
       'No Build to Suit w/o Incentive' => 'ktFsRkzJFk8',
     ];
-    $form = tr_form();
     echo $form->radio('Video')->setOptions( $videos );
+    /**/
 
-    /*
+    //*
     $video_query_args = [
       'post_type' => 'attachment',
       'post_mime_type' => 'video/mp4',
