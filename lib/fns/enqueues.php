@@ -30,7 +30,7 @@ function enqueue_scripts(){
     wp_register_script( 'video-js', HPM_PLUGIN_DIR_URL . 'lib/js/video.min.js', null, '7.3.0' );
     wp_enqueue_script( 'proposal', HPM_PLUGIN_DIR_URL . 'lib/js/proposal.js', ['js-cookie','video-js'], filemtime( HPM_PLUGIN_DIR_PATH . 'lib/js/proposal.js'), true );
     $video = get_post_meta( $post->ID, 'video', true );
-    $poster_frame = wp_get_attachment_url( 1719 );
+    $poster_frame = wp_get_attachment_url( 2342 );
     wp_localize_script( 'proposal', 'scriptvars', [
         'siteurl' => site_url(),
         'video' => $video,
