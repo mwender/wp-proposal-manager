@@ -4,7 +4,7 @@ Donate link: https://example.com/
 Tags: comments, spam
 Requires at least: 6.0
 Tested up to: 6.3
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,9 @@ Provides a "Proposals" CPT that features a custom permalink.
 Long description coming soon...
 
 == Changelog ==
+
+= 1.2.2 =
+* Removing "Protected: " from post titles when displaying the title of a protected post.
 
 = 1.2.1 =
 * Checking for valid referers before showing "wrong password" message.
