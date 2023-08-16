@@ -52,8 +52,10 @@ function view_proposal( $template ){
     return $template;
 
   $proposal_template = dirname( __FILE__ ) . '/../../templates/proposal.php';
-  if( file_exists( $proposal_template ) )
+  if( file_exists( $proposal_template ) ){
+    remove_action( 'wp_footer', 'es_authentication_popup' );
     return $proposal_template;
+  }
 
   return $template;
 }

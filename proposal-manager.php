@@ -4,10 +4,10 @@
  * Plugin URI:      https://github.com/mwender/wp-proposal-manager
  * Description:     Adds a Proposal CPT for quick and easy creation of Hollingsworth Construction proposals.
  * Author:          Michael Wender
- * Author URI:      https://michaelwender.com
+ * Author URI:      https://mwender.com
  * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
- * Version:         1.0.0
+ * Version:         1.1.0
  *
  * @package         Hollingsworth_Proposal_Manager
  */
