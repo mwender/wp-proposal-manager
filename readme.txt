@@ -2,9 +2,9 @@
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://example.com/
 Tags: comments, spam
-Requires at least: 6.0
+Requires at least: 6.3
 Tested up to: 6.3
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,9 @@ Provides a "Proposals" CPT that features a custom permalink.
 Long description coming soon...
 
 == Changelog ==
+
+= 1.2.3 =
+* Updating `hide_adminbar_on_proposals()` to not show admin bar on other pages.
 
 = 1.2.2 =
 * Removing "Protected: " from post titles when displaying the title of a protected post.

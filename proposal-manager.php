@@ -7,7 +7,7 @@
  * Author URI:      https://mwender.com
  * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
- * Version:         1.2.2
+ * Version:         1.2.3
  *
  * @package         Hollingsworth_Proposal_Manager
  */
@@ -17,7 +17,7 @@ define( 'HPM_PLUGIN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 // Initialize TypeRocket
 require ( 'lib/typerocket/init.php' );
 
-function hide_adminbar_on_proposals(){
+function hide_adminbar_on_proposals( $show_admin_bar ){
     if(
       is_singular( 'proposal' )
       || 'proposal' == get_post_type()
@@ -26,7 +26,7 @@ function hide_adminbar_on_proposals(){
     ){
         return false;
     }
-    return true;
+    return $show_admin_bar;
 }
 add_filter('show_admin_bar', 'hide_adminbar_on_proposals', 999);
 
