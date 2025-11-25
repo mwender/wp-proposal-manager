@@ -66,13 +66,15 @@ add_action( 'template_include', __NAMESPACE__ . '\\view_proposal' );
  *
  * This matches URLs like:
  *   /view-proposal/abc123
+ *   /view-proposal/abc123/
  *
  * @param array $patterns Existing allowed patterns.
  * @return array Modified patterns including our endpoint.
  */
 function force_login_compat( $patterns ) {
   // Add regex for: /view-proposal/{uid}
-  $patterns[] = '#^/view-proposal/[0-9a-z]+$#';
+  $patterns[] = '#^/view-proposal/[0-9a-z]+/?$#';
+
 
   return $patterns;
 }

@@ -4,7 +4,7 @@ Donate link: https://example.com/
 Tags: comments, spam
 Requires at least: 6.3
 Tested up to: 6.3
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,9 @@ Provides a "Proposals" CPT that features a custom permalink.
 Long description coming soon...
 
 == Changelog ==
+
+= 1.3.1 =
+* Allowing trailing slash on `/view-proposal/{uid}` URLs for matching with WP Force Login allowed URLs.
 
 = 1.3.0 =
 * Adding `force_login_allowed_patterns` for compatibility with WP Force Login plugin.
