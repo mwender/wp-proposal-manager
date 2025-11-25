@@ -1,0 +1,23 @@
+{
+  "name": "mwender/wp-proposal-manager",
+  "description": "A WordPress plugin for managing proposals.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Michael Wender",
+      "homepage": "https://github.com/mwender"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "WpProposalManager\\": "includes/"
+    }
+  },
+  "extra": {
+    "installer-name": "wp-proposal-manager"
+  }
+}
