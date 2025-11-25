@@ -40,7 +40,7 @@ add_action( 'typerocket_loaded', function(){
   // Add an admin index "Permalink" column
   $proposals->addColumn('permalink', false, 'Permalink', function(){
     $unique_id = tr_posts_field('unique_id');
-    $proposal_permalink = home_url( 'view-proposal/' . $unique_id );
+    $proposal_permalink = home_url( 'view-proposal/' . $unique_id . '/' );
     echo '<a href="' . $proposal_permalink . '" target="_blank">' . $proposal_permalink . '</a>';
   }, 'string' );
 
