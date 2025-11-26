@@ -4,7 +4,7 @@ Donate link: https://example.com/
 Tags: comments, spam
 Requires at least: 6.3
 Tested up to: 6.3
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,10 @@ Provides a "Proposals" CPT that features a custom permalink.
 Long description coming soon...
 
 == Changelog ==
+
+= 1.3.3 =
+* Removing links to `home_url()`.
+* Adjusting footer links.
 
 = 1.3.2 =
 * Adding trailing slash to URLs listed in Proposal CPT Permalink column in admin.

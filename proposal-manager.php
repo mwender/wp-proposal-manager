@@ -7,7 +7,7 @@
  * Author URI:      https://mwender.com
  * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
- * Version:         1.3.2
+ * Version:         1.3.3
  *
  * @package         Hollingsworth_Proposal_Manager
  */

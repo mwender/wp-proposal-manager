@@ -4,10 +4,10 @@
       <section class="container">
         <div class="row">
           <div class="column">
-            <a href="<?php echo site_url(); ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/hollingsworth-logo.svg" alt="Visit our website" /></a>
+            <img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/hollingsworth-logo.svg" alt="Visit our website" />
           </div>
           <div class="column">
-            <p>Prepared: <?php echo get_the_date() ?><br /><a href="<?php echo site_url() ?>"><?php echo str_replace( ['http://','https://'], '', site_url() ) ?></a></p>
+            <p>Prepared: <?php echo get_the_date() ?></p>
           </div>
         </div>
 
@@ -74,26 +74,26 @@
       <div class="row" style="margin-bottom: 10px;">
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings/?view=5', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings/?view=5', 'http') ?>" target="_blank">Click to Find Properties</a></div>
+            <div class="card-image"><a href="https://hollingsworthcos.com/properties" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/click-to-find-properties.jpg" /></a></div>
+            <div class="card-caption"><a href="https://hollingsworthcos.com/properties" target="_blank">Click to Find Properties</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings/?view=1', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings/?view=1', 'http') ?>" target="_blank">Available Now</a></div>
+            <div class="card-image"><a href="https://hollingsworthcos.com/services" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/available-now.jpg" /></a></div>
+            <div class="card-caption"><a href="https://hollingsworthcos.com/services" target="_blank">Our Services</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings/?view=2', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings/?view=2', 'http') ?>" target="_blank">Under Construction Ready in 120 Days</a></div>
+            <div class="card-image"><a href="https://hollingsworthcos.com/news" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/construction-ready.jpg" /></a></div>
+            <div class="card-caption"><a href="https://hollingsworthcos.com/news" target="_blank">Construction News and Insights</a></div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-image"><a href="<?php echo site_url('our-listings/?view=3', 'http') ?>" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
-            <div class="card-caption"><a href="<?php echo site_url('our-listings/?view=3', 'http') ?>" target="_blank">Build to Suit in as little as 180 days</a></div>
+            <div class="card-image"><a href="https://hollingsworthcos.com/about" target="_blank"><img src="<?php echo HPM_PLUGIN_DIR_URL ?>lib/img/build-to-suit.jpg" /></a></div>
+            <div class="card-caption"><a href="https://hollingsworthcos.com/about" target="_blank">About Hollingsworth Cos.</a></div>
           </div>
         </div>
       </div>
