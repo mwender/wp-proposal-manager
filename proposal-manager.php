@@ -7,7 +7,7 @@
  * Author URI:      https://mwender.com
  * Text Domain:     hollingsworth-proposal-manager
  * Domain Path:     /languages
- * Version:         1.3.4
+ * Version:         1.3.5
  *
  * @package         Hollingsworth_Proposal_Manager
  */
@@ -36,5 +36,6 @@ require_once( 'lib/fns/inlinestyles.php' );
 require_once( 'lib/fns/password-form.php' );
 require_once( 'lib/fns/proposal-cpt.php' );
 require_once( 'lib/fns/remove-protected.php' );
+require_once( 'lib/fns/robots.php' );
 require_once( 'lib/fns/unique_id.php' );
 require_once( 'lib/fns/url_rewrites.php' );

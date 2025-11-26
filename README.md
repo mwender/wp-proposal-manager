@@ -4,7 +4,7 @@
 **Tags:** comments, spam  
 **Requires at least:** 6.5  
 **Tested up to:** 6.7  
-**Stable tag:** 1.3.4  
+**Stable tag:** 1.3.5  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -15,6 +15,9 @@ Provides a "Proposals" CPT that features a custom permalink.
 Long description coming soon...
 
 ## Changelog ##
+
+### 1.3.5 ###
+* Adding `robots_txt` filter for blocking proposal views.
 
 ### 1.3.4 ###
 * Updating map link to main site "Our Properties".
