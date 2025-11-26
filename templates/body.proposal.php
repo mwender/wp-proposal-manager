@@ -64,7 +64,7 @@
         </div>
         <div class="column column-33" id="about">
           <h4>About The Hollingsworth Companies</h4>
-          <a href="<?php echo site_url('our-listings/', 'http') ?>" target="_blank"><img class="border" src="<?php echo HPM_PLUGIN_DIR_URL; ?>lib/img/map-cropped.jpg" /></a>
+          <a href="https://hollingsworthcos.com/properties" target="_blank"><img class="border" src="<?php echo HPM_PLUGIN_DIR_URL; ?>lib/img/map-cropped.jpg" /></a>
           <p class="hidetext"><strong>Building on Success: </strong><br/>The Hollingsworth Companies Industrial Building Program doesn’t just build industrial facilities. We build businesses. Because we are likely to own all the real estate surrounding any of our facilities that you might select, we take a very serious interest in making sure your business is successful and growing. Our business grows when your business thrives, so it is only natural for us to want to see you do well. The list of creative solutions to business challenges is as long as our 50 years of combined experience, and it will continue to get longer.</p>
         </div>
       </div>
