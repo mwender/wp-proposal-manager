@@ -1,10 +1,9 @@
-# Hollingsworth Proposal Manager #
-**Contributors:** TheWebist  
-**Donate link:** https://example.com/  
-**Tags:** comments, spam  
+# WordPress Proposal Manager #
+**Contributors:** [thewebist](https://profiles.wordpress.org/thewebist/)  
+**Tags:** cpt  
 **Requires at least:** 6.5  
-**Tested up to:** 6.7  
-**Stable tag:** 1.3.5  
+**Tested up to:** 6.9  
+**Stable tag:** 1.4.0  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -12,9 +11,12 @@ Provides a "Proposals" CPT that features a custom permalink.
 
 ## Description ##
 
-Long description coming soon...
+Developed for a construction company, this plugin implements a Proposal CPT that features a custom landing page with selectable video elements along with a section for providing client-viewable proposals.
 
 ## Changelog ##
+
+### 1.4.0 ###
+* Including Typerocket required Composer Libraries.
 
 ### 1.3.5 ###
 * Adding `robots_txt` filter for blocking proposal views.
