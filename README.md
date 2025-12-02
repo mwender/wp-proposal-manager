@@ -3,7 +3,7 @@
 **Tags:** cpt  
 **Requires at least:** 6.5  
 **Tested up to:** 6.9  
-**Stable tag:** 1.4.0  
+**Stable tag:** 1.4.1  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -14,6 +14,9 @@ Provides a "Proposals" CPT that features a custom permalink.
 Developed for a construction company, this plugin implements a Proposal CPT that features a custom landing page with selectable video elements along with a section for providing client-viewable proposals.
 
 ## Changelog ##
+
+### 1.4.1 ###
+* Including required `/lib/typerocket/vendor/composer/autoload_static.php`.
 
 ### 1.4.0 ###
 * Including Typerocket required Composer Libraries.
