@@ -1,6 +1,6 @@
 ### TypeRocket Project Specific
 node_modules
-/vendor
+#/vendor
 /tests
 composer.lock
 .env
